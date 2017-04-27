@@ -1,10 +1,12 @@
 # Crontab with History
 
-This script wraps the original crontab.  
-It is useful in situations where several people are managing servers.  
-  
-It writes diff history after editing crontab and prevents removing crontab by mistake.  
-It also locks when someone modifies crontab to prevent overwriting problems.
+This script code is based on using Crontab commands.  
+It would be useful if you have many users sharing one ID in a server and they use Crontab.  
+
+## Features
+- It writes a history log whenever a user edits Crontab through this.
+- It prevents concurrent editing by creating a lock file.
+- It prevents users from removing Crontab configs by mistake.
 
 
 ## Usage
